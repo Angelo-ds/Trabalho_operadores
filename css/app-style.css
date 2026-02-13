@@ -56,7 +56,7 @@ body{
 
 /* section que segura os botões(incluindo o limpar) e os inputs*/
 .card{
-    background: navy;
+    background: iightblue;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 10px 35px black;
@@ -75,7 +75,7 @@ body{
 .input-group label{
     font-size: 14px;
     margin-bottom: 6px;
-    color: lightgray;
+    color: black;
 }
 
 /* o input em si*/
@@ -85,14 +85,22 @@ body{
     background: black;
     color: white;
     font-size: 15px;
+    border: 1px solid transparent; 
+    transition: all 0.3s ease; 
+}
 
+/* Efeito de hover no input */
+.input-group input:hover {
+    background: #333; 
+    border-color: blue; /* Borda colorida para destaque */
 }
 
 /*Os botões de função*/
 .buttons{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    gap: 5px;
+    border-radius: 10px;
 }
 
 .button{
@@ -101,20 +109,30 @@ body{
     justify-content: center;
     gap: 6px;
     padding: 12px;
-    border-radius:12px;
-    cursor: pointer;
     font-weight: 600;
     font-size: 14px;
     color: white;
-
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
 }
 
+/* Efeito de hover geral para botões */
+.button:hover {
+    transform: translateY(-2px); /* Move o botão ligeiramente para cima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
 
 /*botão de limpar*/
 .btn-clear{
     grid-column: span 2;
     background-color: red;
+    border-radius: 10px;
 }
+
+.btn-clear:hover {
+    background-color: darkred; 
+}
+
 
 /*div que aparece os resultados no final*/
 .resultado{
@@ -125,6 +143,5 @@ body{
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease;
+    box-shadow: 0 5px 25px black
 }

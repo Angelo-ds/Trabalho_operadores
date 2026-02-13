@@ -19,7 +19,8 @@ function calcularTotal(){
 
     resultado.innerHTML = `
         <ul>
-            <li>Seu total esperado é: ${v1} * ${v2} = <span>${v1 * v2}</span></li>
+            <h2>Total da compra<h2>
+            <p>Seu total esperado é: ${v1} * ${v2} = <span>${v1 * v2}</span></p>
         </ul>
     `;
 }
@@ -43,7 +44,8 @@ function desconto(){
 
     resultado.innerHTML = `
         <ul>
-            <li>Seu desconto esperado é: ${v1} - ${v3} = <span>${v1 - v3}</span></li>
+            <h2>Desconto esperado<h2>
+            <p>Seu desconto esperado é: ${v1} - ${v3} = <span>${v1 - v3}</span><p>
         </ul>
     `;
 }
@@ -66,7 +68,8 @@ function juros(){
 
     resultado.innerHTML = `
         <ul>
-            <li>Seu Juros esperado é: ${v1} + ${v3} = <span>${v1 + v3}</span></li>
+            <h2>Juros da compra<h2>
+            <p>Seu Juros esperado é: ${v1} + ${v3} = <span>${v1 + v3}</span><p>
         </ul>
     `;
 }
@@ -88,7 +91,9 @@ function comissao(){
 
     resultado.innerHTML = `
         <ul>
-            <li>Sua comissão esperada é: ${v1} * ${v3} = <span>${v1 * v3}</span></li>
+            <h2>Comissão da compra<h2>
+            <p>Foi aplicado uma porcentagem de ${v2}% sobre o valor de R$${v1}
+            <p>Sua comissão esperada é: <span>${v1 * v3}</span></p>
         </ul>
     `;
 }
@@ -110,8 +115,8 @@ function lucro(){
     resultado.innerHTML = `
         <ul>
             <h2>Lucro da compra<h2>
-            <Preço de venda: R$${v1} com o custo de ${v2}
-            <li>Seu lucro esperado é: ${v1} - ${v2} = <span>${v1 - v2}</span></li>
+            <p>Teve um gasto de R$${v2} sobre o valor de R$${v1}
+            <p>Seu lucro esperado é:<span> R$${v1 - v2}</span><p>
         </ul>
     `;
 }
