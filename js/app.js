@@ -15,7 +15,9 @@ function calcularTotal(){
         <h2>Erro<h2>
         <p>insira um valor válido para os dois campos.<p>
         `
-            verificaV1.focus();
+        resultado.style.background ="red"
+        verificaV1.focus();
+        
         return;
     }
 
@@ -39,7 +41,12 @@ function desconto(){
     let  v3 = (v1 * v2) /100
 
     if (isNaN(v1) || isNaN(v2)){
-        alert("Valor 01 ou Valor 02 inválido. Digite um número.");
+        resultado.innerHTML=
+        `
+        <h2>Erro<h2>
+        <p>insira um valor válido para os dois campos.<p>
+        `
+        resultado.style.background ="red"
         verificaV1.focus();
         return;
     }
@@ -64,7 +71,12 @@ function juros(){
     let v3 = (v1 * v2) /100
 
     if (isNaN(v1) || isNaN(v2)){
-        alert("Valor 01 ou Valor 02 inválido. Digite um número.");
+        resultado.innerHTML=
+        `
+        <h2>Erro<h2>
+        <p>insira um valor válido para os dois campos.<p>
+        `
+        resultado.style.background ="red"
         verificaV1.focus();
         return;
     }
@@ -88,7 +100,12 @@ function comissao(){
     let v3 = v2 /100
 
     if (isNaN(v1) || isNaN(v2)){
-        alert("Valor 01 ou Valor 02 inválido. Digite um número.");
+        resultado.innerHTML=
+        `
+        <h2>Erro<h2>
+        <p>insira um valor válido para os dois campos.<p>
+        `
+        resultado.style.background ="red"
         verificaV1.focus();
         return;
     }
@@ -111,7 +128,12 @@ function lucro(){
     const v2 = parseFloat(verificaV2.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert("Valor 01 ou Valor 02 inválido. Digite um número.");
+        resultado.innerHTML=
+        `
+        <h2>Erro<h2>
+        <p>insira um valor válido para os dois campos.<p>
+        `
+        resultado.style.background ="red"
         verificaV1.focus();
         return;
     }
