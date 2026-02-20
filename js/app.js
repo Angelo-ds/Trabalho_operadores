@@ -44,9 +44,9 @@ function calcularTotal(){
 
 function desconto(){
 
-    const v1 = parseFloat(verificaV1.value);
-    const v2 = parseFloat(verificaV2.value);
-    let  v3 = (v1 * v2) /100
+    const v1 = parseFloat(verificaV1.value); //o primeiro valor que o usuário digita (valor original)
+    const v2 = parseFloat(verificaV2.value); // o segundo valor que o usuário digita (valor de termo)
+    let  v3 = (v1 * v2) /100 //valor que efetua as contas ncessárias
 
     if (isNaN(v1) || isNaN(v2)){
 
@@ -79,7 +79,7 @@ function juros(){
         mostrarErro();
         return;
     }
-
+ 
 
     resultado.style.display = 'flex';
     resultado.style.background = 'lightblue';
